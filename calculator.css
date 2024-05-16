@@ -1,125 +1,130 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: san-serif;
+}
 
-  *{
- margin:0;
- padding:0;
- box-sizing:border-box;
- font-family:san-serif;
- }
- 
- html,body{
- width:100%;
- height:100%;
- background-image: linear-gradient(to bottom right,rgba(79,51,176,1),rgba(216, 29, 135,1));
- background-repeat: no-repeat;
- background-size: cover;
- }
- 
- button{
-    width:50px;
-    height:55px;
-    border: none;
-    border-radius:13px;
-    background-color:rgb(109, 109, 112);
-    font-size:1.5rem;
-    font-weight: 200;
-    box-shadow:2px 2px 2px 1px #a4864d;
-   cursor:grab;
-   transition: 1s ease-in;
- }
- button:hover
- {
-   box-shadow:2px 2px 2px 1px #f1ba52;
- }
+html,
+body {
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(to bottom right, rgb(202, 146, 43),rgb(77, 70, 70));
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 
- .calculator
- {
-    background-color: rgb(50, 46, 46);
-    overflow: hidden;
-   align-items: center;
+button {
+   width: 50px;
+   height: 55px;
+   border: none;
+   border-radius: 13px;
+   background-color: rgb(109, 109, 112);
+   font-size: 1.5rem;
+   font-weight: 200;
+   box-shadow: 2px 2px 2px 1px #a4864d;
+   cursor: grab;
+}
+
+button:hover {
+   box-shadow: 2px 2px 2px 1px #f1ba52;
+}
+
+.calculator {
+   background-color: rgb(50, 46, 46);
+   overflow: hidden;
+   align-items:center;
    margin: auto;
    border-radius: 50px;
-   width:300px;
-   box-shadow:2px 2px 2px 1px #a4864d;
- }
- #btn
- {
-    background-color: rgb(50, 46, 46);
-    display: grid;
-    gap:20px;
-    grid-template-columns: repeat(4,1fr); 
-    padding:20px 20px;
-    writing-mode: horizontal-tb;
-    max-width: 1200px;
- }
- #display
- {
-    font-size:4rem;
-    background-color: rgb(50, 46, 46);
-    max-width:300px;
-    border: none;
-    margin:5px;
-    text-align: left;
-    color: rgb(255, 250, 250);
- }
- .sign
- {
-    background-color:orange;
- }
- .sign:hover
- {
-    background-color:rgb(230, 151, 4);
- }
- .sign:active
- {
-    background-color:#f1ba52;
- }
- button:hover
- {
-    background-color:rgb(123, 123, 131);  
- }
- button:active
- {
-    background-color:rgba(121, 121, 130, 0.285);  
- }
- @media only screen and (max-width: 400px) {
+   width: 300px;
+   box-shadow: 2px 2px 2px 1px #a4864d;
+}
+
+#btn {
+   background-color: rgb(50, 46, 46);
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(4, 1fr);
+   padding: 20px 20px;
+   writing-mode: horizontal-tb;
+   max-width: 1200px;
+}
+
+#display {
+   font-size:3rem;
+   background-color: rgb(50, 46, 46);
+   max-width: 300px;
+   border: none;
+   margin: 5px;
+   text-align: left;
+   color: rgb(255, 250, 250);
+}
+
+.sign {
+   background-color: orange;
+}
+
+.sign:hover {
+   background-color: rgb(230, 151, 4);
+}
+
+.sign:active {
+   background-color: #f1ba52;
+}
+
+button:hover {
+   background-color: rgb(123, 123, 131);
+   scale: 1.1;
+}
+
+button:active {
+   background-color: rgba(121, 121, 130, 0.285);
+}
+#display:focus
+{
+   outline: none;
+}
+
+
+@media only screen and (max-width: 400px) {
    body {
-     background-color: lightblue;
+      background-color: lightblue;
    }
-   .calculator
-   {
+
+   .calculator {
       overflow: hidden;
-      width:200px;
+      width: 200px;
    }
-   button
-   {
+
+   button {
       width: 25px;
-      height:30px;
+      height: 30px;
       border: none;
-      border-radius:13px;
-      background-color:rgb(109, 109, 112);
-      font-size:1rem;
-      font-weight:200;
+      border-radius: 13px;
+      background-color: rgb(109, 109, 112);
+      font-size: 1rem;
+      font-weight: 200;
+      box-shadow: 2px 2px 2px 1px rgb(215, 159, 54);
    }
-   #btn
-   {
+
+   #btn {
       background-color: rgb(50, 46, 46);
       display: grid;
-      gap:20px;
-      grid-template-columns: repeat(3,1fr); 
-      padding:20px 20px;
+      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 20px 20px;
       overflow-wrap: normal;
       /* max-width: 1200px; */
    }
-   #display
- {
-    font-size:2rem;
-    background-color: rgb(50, 46, 46);
-    border: none;
-    margin:5px;
-    width: calc();
-    text-align: left;
-    color: rgb(255, 250, 250);
- }
-   
- }
- 
+
+   #display {
+      font-size: 2rem;
+      background-color: rgb(50, 46, 46);
+      border: none;
+      margin: 5px;
+      width: calc();
+      text-align: left;
+      color: rgb(255, 250, 250);
+   }
+
+}
